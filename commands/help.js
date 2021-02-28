@@ -25,7 +25,7 @@ module.exports = {
                 { name: `${ PREFIX }purge`, value:`Clears a set amount of messages. (Requires ${ PURGEPERMS }).`}
             )
             .setTimestamp()
-            .setFooter('VerdugoManager bot by 𝔇𝔞𝔯𝔨𝔯𝔞𝔦#1234')
+            .setFooter('BasicModBot by 𝔇𝔞𝔯𝔨𝔯𝔞𝔦#1234')
         msg.channel.send(embed);
     }
 }
