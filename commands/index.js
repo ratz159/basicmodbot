@@ -4,6 +4,5 @@ module.exports = {
     Ban: require('./ban'),
     SetNick: require('./setnick'),
     Unban: require('./unban'),
-    //Kickid: require('./kickid'),
     Help: require('./help')
   };
