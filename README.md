@@ -1,7 +1,7 @@
 VERDUGOMANAGER BOT
 ==================
 
-Verdugo Manager Bot is a discord bot intended to perform basic moderation features. If you wish to host your own instance of this bot, feel free. This is hosted locally via docker (if you wish to run it the way it was initially intended, install docker for windows (here)[https://docs.docker.com/docker-for-windows/install/]).
+Verdugo Manager Bot is a discord bot intended to perform basic moderation features. If you wish to host your own instance of this bot, feel free. This is hosted locally via docker (if you wish to run it the way it was initially intended, install docker for windows [here](https://docs.docker.com/docker-for-windows/install/)).
 
 Running your own instance
 --------------------------
