@@ -1,0 +1,15 @@
+{
+  "name": "verdugo_manager",
+  "version": "1.0.0",
+  "description": "Moderation Bot for the VHHS server",
+  "main": "index.js",
+  "scripts": {
+    "test": "v!ping"
+  },
+  "author": "Scott Pendland",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
