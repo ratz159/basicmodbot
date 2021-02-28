@@ -1,11 +1,14 @@
+require('dotenv').config();
 const Discord = require('discord.js');
-
+var PURGEPERMS = process.env.PURGEPERMS;
+if (!PURGEPERMS) PURGEPERMS = "ADMINISTRATOR";
+else if (PURGEPERMS !== 'ADMINISTRATOR' && PURGEPERMS !== 'MANAGE_MESSAGES') PURGEPERMS = "ADMINISTRATOR";
 module.exports = {
     name: 'purge',
     description: 'deletes messages',
     execute(msg, args) {
         const executioner = msg.guild.members.resolve(msg.author);
-        if (!(executioner.hasPermission('MANAGE_MESSAGES'))) return;
+        if (!(executioner.hasPermission(`${ PURGEPERMS }`))) return;
         msg.delete().then( () => {
             const messagecount = parseInt(args[0]);
             msg.channel.messages.fetch({ limit: messagecount }).then(messages => msg.channel.bulkDelete(messages));
