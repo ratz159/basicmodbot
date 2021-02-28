@@ -7,3 +7,4 @@ package-lock.json
 #Below items are under construction
 /commands/modmail.js
 /commands/index.js
+/commands/warn.js

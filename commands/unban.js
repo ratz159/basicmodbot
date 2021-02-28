@@ -1,3 +1,7 @@
+require('dotenv').config();
+const Discord = require('discord.js');
+const BOTNAME = process.env.BOTNAME;
+
 module.exports = {
     name: "unban",
     description: "Unbans a user",
@@ -25,7 +29,7 @@ module.exports = {
                 const embedToSend = new msg.Discord.MessageEmbed()
                 .setColor('#800000')
                 .setTitle('Ban')
-                .setAuthor('Verdugo Manager', 'https://images-ext-1.discordapp.net/external/o_pWOwK0Om68yCEP15wGl9A0l2Mo2UKaabMEiSrT0bc/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/c68a968f61924a57da89e61d110ce97a.png')
+                .setAuthor(`${ BOTNAME }`, 'https://images-ext-1.discordapp.net/external/LZtjrGg41lXSUWwqp3l_g3ChpOzZympOBzetF_AJ9S4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/cdf422b9411621bd933dc67156925a05.png')
                 .setDescription(`Unbanned ${ user } for ${ reasoning }`)
                 .setTimeStamp()
             msg.channel.send(embedToSend);

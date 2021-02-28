@@ -1,4 +1,4 @@
 .gitignore
 .example.env
-README.md
-LICENSE.md
+*.md
+commands/modmail.js

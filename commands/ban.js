@@ -1,5 +1,7 @@
+require('dotenv').config();
+const Discord = require('discord.js');
 const { DiscordAPIError } = require("discord.js");
-const Discord = require('discord.js')
+const BOTNAME = process.env.BOTNAME;
 module.exports = {
     name: 'ban',
     description: 'Bans a user',
@@ -15,14 +17,14 @@ module.exports = {
             if (user) {
             const member = msg.guild.member(user);
             if (member) {
-                member.send(`You have been banned from the VHHS discord for: ${ reasoning }`).then(() => {
+                member.send(`You have been banned from ${ msg.guild.name } for: ${ reasoning }`).then(() => {
                 member.ban({
                     reason: reasoning,
                 }).then(() => {
                     const exampleEmbed = new Discord.MessageEmbed()
                     .setColor('#800000')
                     .setTitle('Ban')
-                    .setAuthor('Verdugo Manager', 'https://images-ext-1.discordapp.net/external/o_pWOwK0Om68yCEP15wGl9A0l2Mo2UKaabMEiSrT0bc/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/c68a968f61924a57da89e61d110ce97a.png', 'https://verdugohs.org')
+                    .setAuthor(`${ BOTNAME }`, 'https://images-ext-1.discordapp.net/external/LZtjrGg41lXSUWwqp3l_g3ChpOzZympOBzetF_AJ9S4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/cdf422b9411621bd933dc67156925a05.png')
                     .setDescription(`Banned ${ user } for ${ reasoning }`)
                     .setThumbnail('https://media3.giphy.com/media/fe4dDMD2cAU5RfEaCU/giphy.gif')
                     .setTimestamp()
