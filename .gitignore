@@ -4,3 +4,6 @@
 /commands/kickid.js
 #The above is for testing purposes. No need to worry about that file
 package-lock.json
+#Below items are under construction
+/commands/modmail.js
+/commands/index.js

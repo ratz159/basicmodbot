@@ -4,5 +4,6 @@ module.exports = {
     Ban: require('./ban'),
     SetNick: require('./setnick'),
     Unban: require('./unban'),
-    Help: require('./help')
+    Help: require('./help'),
+    ModMail: require('./modmail')
   };
