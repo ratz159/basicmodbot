@@ -25,6 +25,7 @@ bot.on('ready', () => {
 
 bot.on('message', msg => {
     if (msg.author.bot) return;
+    // else if (msg.guild === null && !msg.content.startsWith(PREFIX)) {msg.reply('To send a mod message, please use v!modmail'); return;}
     else if (!msg.content.startsWith(PREFIX)) return;
     const msgContent = msg.content.slice(2);
     const args = msgContent.split(/ +/);
