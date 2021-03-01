@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 require('dotenv').config();
 const PREFIX = process.env.PREFIX;
+const BOTNAME = process.env.BOTNAME;
 var PURGEPERMS = process.env.PURGEPERMS;
+const PFPURL = process.env.PFPURL;
 switch (PURGEPERMS) {
     case 'MANAGE_MESSAGES':
         PURGEPERMS = 'manage message permissions';
@@ -14,6 +16,7 @@ module.exports = {
     desciption: 'Returns a help message',
     execute(msg, args) {
         const embed = new Discord.MessageEmbed()
+            .setAuthor(`${ BOTNAME }`, `${ PFPURL }`)
             .setColor('#800000')
             .setTitle('Command List')
             .addFields(

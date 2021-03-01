@@ -1,5 +1,8 @@
+require('dotenv').config();
 const { Client } = require("discord.js");
-const Discord = require('discord.js')
+const Discord = require('discord.js');
+const BOTNAME = process.env.BOTNAME;
+const PFPURL = process.env.PFPURL;
 module.exports = {
     name: "setnick",
     description: "Changes the nickname of a user",
@@ -20,7 +23,7 @@ module.exports = {
                     const exampleEmbed = new Discord.MessageEmbed()
                     .setColor('#800000')
                     .setTitle('Nick Name Change')
-                    .setAuthor('Verdugo Manager', 'https://images-ext-1.discordapp.net/external/LZtjrGg41lXSUWwqp3l_g3ChpOzZympOBzetF_AJ9S4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/cdf422b9411621bd933dc67156925a05.png')
+                    .setAuthor(`${ BOTNAME }`, `${ PFPURL }`)
                     .setDescription(`Changed nick for ${ user }`)
                     .setTimestamp()
                     msg.channel.send(exampleEmbed);

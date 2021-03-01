@@ -1,6 +1,7 @@
 require('dotenv').config();
 const Discord = require('discord.js');
 const BOTNAME = process.env.BOTNAME;
+const PFPURL = process.env.PFPURL;
 
 module.exports = {
     name: "unban",
@@ -29,7 +30,7 @@ module.exports = {
                 const embedToSend = new msg.Discord.MessageEmbed()
                 .setColor('#800000')
                 .setTitle('Ban')
-                .setAuthor(`${ BOTNAME }`, 'https://images-ext-1.discordapp.net/external/LZtjrGg41lXSUWwqp3l_g3ChpOzZympOBzetF_AJ9S4/%3Fsize%3D256/https/cdn.discordapp.com/avatars/807784293450776607/cdf422b9411621bd933dc67156925a05.png')
+                .setAuthor(`${ BOTNAME }`, `${ PFPURL }`)
                 .setDescription(`Unbanned ${ user } for ${ reasoning }`)
                 .setTimeStamp()
             msg.channel.send(embedToSend);
