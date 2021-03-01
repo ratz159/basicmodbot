@@ -5,9 +5,10 @@ Verdugo Manager Bot is a discord bot intended to perform basic moderation featur
 
 Running your own instance
 --------------------------
-1. Make a copy of .example.env and name it .env
-2. Place _your_ bot token and desired prefix in the new .env file
-3. Run the command `docker build -t <name of module> .` and then `docker run -d <name of module>`
-4. You're all set!
+1. Run the command `git clone https://github.com/ratz159/basicmodbot` in your terminal.
+2. Make a copy of .example.env and name it .env
+3. Place _your_ bot token and desired prefix in the new .env file
+4. Run the command `docker build -t <name of module> .` and then `docker run -d <name of module>`
+5. You're all set!
 
 [^1]: Note that runs on WSL 2 (Using Ubuntu 20.04). Using a windows system _may require_ this to be installed. I am unaware on how it would function on systems without it.
