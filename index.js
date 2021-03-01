@@ -16,7 +16,7 @@ bot.on('ready', () => {
     bot.user.setPresence({
         status: 'online',
         activity: {
-            name: `${ PREFIX }help | https://github.com/ratz159/basicmodbot`,
+            name: `${ PREFIX }help | github.com/ratz159/basicmodbot`,
             type: 'WATCHING',
             start: '1614409854606'
         }
