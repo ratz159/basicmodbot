@@ -25,7 +25,7 @@ module.exports = {
                 { name: `${ PREFIX }setnick`, value: 'Changes a users nickname. (Requires manage nickname perms).'},
                 { name: `${ PREFIX }unban`, value: 'Unbans a member. (Requires admin perms).'},
                 { name: `${ PREFIX }help`, value: 'Displays this message.'},
-                { name: `${ PREFIX }purge`, value:`Clears a set amount of messages. (Requires ${ PURGEPERMS }).`}
+                { name: `${ PREFIX }purge <no.>(or ${ PREFIX }clear <no.>)`, value:`Clears a set amount of messages. (Requires ${ PURGEPERMS }).`}
             )
             .setTimestamp()
             .setFooter('BasicModBot by 𝔇𝔞𝔯𝔨𝔯𝔞𝔦#1234')

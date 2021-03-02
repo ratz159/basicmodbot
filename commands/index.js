@@ -6,5 +6,6 @@ module.exports = {
     Unban: require('./unban'),
     Help: require('./help'),
     // ModMail: require('./modmail'),
-    Purge: require('./purge')
+    Purge: require('./purge'),
+    Clear: require('./clear')
   };
