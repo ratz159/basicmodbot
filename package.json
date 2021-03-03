@@ -1,10 +1,10 @@
 {
-  "name": "verdugo_manager",
+  "name": "basicmodbot",
   "version": "1.0.0",
   "description": "Moderation Bot for the VHHS server",
   "main": "index.js",
   "scripts": {
-    "test": "v!ping"
+    "test": "b!ping"
   },
   "author": "Scott Pendland",
   "license": "ISC",
