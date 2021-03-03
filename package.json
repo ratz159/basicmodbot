@@ -1,7 +1,7 @@
 {
   "name": "basicmodbot",
   "version": "1.0.0",
-  "description": "Moderation Bot for the VHHS server",
+  "description": "Simple moderation bot",
   "main": "index.js",
   "scripts": {
     "test": "b!ping"
