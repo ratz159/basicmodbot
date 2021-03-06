@@ -5,7 +5,7 @@ if (!PURGEPERMS) PURGEPERMS = "ADMINISTRATOR";
 else if (PURGEPERMS !== 'ADMINISTRATOR' && PURGEPERMS !== 'MANAGE_MESSAGES') PURGEPERMS = "ADMINISTRATOR";
 module.exports = {
     name: 'clear',
-    description: 'deletes messages',
+    description: 'deletes messages (alt. form of purge)',
     execute(msg, args) {
         const executioner = msg.guild.members.resolve(msg.author);
         if (!(executioner.hasPermission(`${ PURGEPERMS }`))) return;
